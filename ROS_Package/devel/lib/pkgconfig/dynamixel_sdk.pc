@@ -1,0 +1,8 @@
+prefix=/home/kevingim/catkin_ws/devel
+
+Name: dynamixel_sdk
+Description: Description of dynamixel_sdk
+Version: 3.7.41
+Cflags: -I/home/kevingim/catkin_ws/src/Dynamixel_SDK/dynamixel_sdk/include
+Libs: -L${prefix}/lib -ldynamixel_sdk
+Requires: roscpp rospy

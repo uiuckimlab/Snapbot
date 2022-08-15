@@ -10,8 +10,9 @@ Snapbot ROS Package
  
  List of command
  
- w: Forward \\
- s: Backword \\
+ w: Forward 
+ 
+ s: Backword 
  a: Steer left
  d: Steer right
  q: Diagonal left front

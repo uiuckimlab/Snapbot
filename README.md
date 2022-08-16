@@ -4,3 +4,53 @@
 </div>
 
 -----------------
+
+## Contents
+1. [Overview](#overview)
+2. [3D printing STL](#3d-printing-stl)
+3. [MATLAB Simulation](#matlab-simulation)
+4. [ROS Package](#ros-package)
+5. [Related Work](#related-work)
+6. [Citation](#citation)
+
+## Overview
+## 3D printing STL
+## MATLAB Simulation
+## ROS Package
+
+## Related Work
+
+- [**Snapbot: A reconfigurable legged robot**](https://ieeexplore.ieee.org/abstract/document/8206477)
+- [**Trajectory-based Probabilistic Policy Gradient for Learning Locomotion Behaviors**](https://ieeexplore.ieee.org/abstract/document/8794207)
+- [**Automated Deep Reinforcement Learning Environment for Hardware of a Modular Legged Robot**](https://ieeexplore.ieee.org/abstract/document/8442201)
+ 
+<!-- @INPROCEEDINGS{8206477,
+  author={Kim, Joohyung and Alspach, Alexander and Yamane, Katsu},
+  booktitle={2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Snapbot: A reconfigurable legged robot}, 
+  year={2017}}
+  
+
+@INPROCEEDINGS{8442201,  
+  author={Ha, Sehoon and Kim, Joohyung and Yamane, Katsu},  
+  booktitle={2018 15th International Conference on Ubiquitous Robots (UR)},   
+  title={Automated Deep Reinforcement Learning Environment for Hardware of a Modular Legged Robot},   
+  year={2018}}
+
+@INPROCEEDINGS{8794207,  
+  author={Choi, Sungjoon and Kim, Joohyung},  
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)},   
+  title={Trajectory-based Probabilistic Policy Gradient for Learning Locomotion Behaviors},   
+  year={2019}}
+ -->
+
+## Citation
+```
+@INPROCEEDINGS{9341279,  
+  author={Gim, Kevin G. and Kim, Joohyung},  
+  booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},   
+  title={Snapbot V2: a Reconfigurable Legged Robot with a Camera for Self Configuration Recognition},   
+  year={2020}
+}
+```
+Link: https://ieeexplore.ieee.org/abstract/document/9341279

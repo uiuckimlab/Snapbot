@@ -4,14 +4,16 @@
 </div>
 
 -----------------
+Snapbot is a reconfigurable legged robot to emulate configuration changes and various style of legged locomotion and Snapbot V2.0 is an upgraded hardware that has better dynamic performance and robust leg module connection. 
+
+
 
 ## Contents
-1. [Overview](#overview)
-2. [3D printing STL](#3d-printing-stl)
-3. [MATLAB Simulation](#matlab-simulation)
-4. [ROS Package](#ros-package)
-5. [Related Work](#related-work)
-6. [Citation](#citation)
+1. [3D printing STL](#3d-printing-stl)
+2. [MATLAB Simulation](#matlab-simulation)
+3. [ROS Package](#ros-package)
+4. [Related Work](#related-work)
+5. [Citation](#citation)
 
 ## Overview
 ## 3D printing STL

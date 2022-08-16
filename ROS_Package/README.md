@@ -1,6 +1,6 @@
-Snapbot ROS Package
+Snapbot Hardware ROS Package
 
-"src" folder contains two ROS packages used for Snapbop.
+"src" folder contains two ROS packages used for running a Snapbot Hardware.
 
 1. Dynamixel SDK 
  Snapbot has Dynamixel XM430-W210-T servo motors as its actuators. To run the servo motors, "Snapbot" package uses Dynamixel SDK. 

@@ -4,7 +4,7 @@
 </div>
 
 -----------------
-Snapbot is a reconfigurable legged robot to emulate configuration changes and various style of legged locomotion and Snapbot V2.0 is an upgraded hardware that has better dynamic performance and robust leg module connection. 
+**Snapbot** is a reconfigurable legged robot to emulate configuration changes and various style of legged locomotion and **Snapbot V2.0** is an upgraded hardware that has better dynamic performance and robust leg module connection. 
 
 
 

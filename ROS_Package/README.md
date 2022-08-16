@@ -1,4 +1,4 @@
-Snapbot Hardware ROS Package
+**Snapbot Hardware ROS Package**
 
 "src" folder contains two ROS packages used for running a Snapbot Hardware.
 

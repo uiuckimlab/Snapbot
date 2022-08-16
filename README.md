@@ -4,7 +4,10 @@
 </div>
 
 -----------------
-**Snapbot** is a reconfigurable legged robot to emulate configuration changes and various styles of legged locomotion, and **Snapbot V2.0** is upgraded hardware with better dynamic performance and robust leg module connection. In this repository, we provide STL files and a BOM to build the Snapbot V2.0 hardware, MATLAB Simscape simulation models of different leg configurations, ROS package to operate the hardware, and URDF of the robot. 
+**Snapbot** is a reconfigurable legged robot to emulate configuration changes and various styles of legged locomotion, and **Snapbot V2.0** is upgraded hardware with better dynamic performance and robust leg module connection. Snapbot is composed of a body and leg modules
+
+
+In this repository, we provide STL files and a BOM to build the Snapbot V2.0 hardware, MATLAB Simscape simulation models of different leg configurations, ROS package to operate the hardware, and URDF of the robot. 
 
 
 

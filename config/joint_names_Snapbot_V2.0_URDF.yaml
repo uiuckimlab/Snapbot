@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'camera_1', 'camera_2', 'leg_1_2', 'leg_1_3', 'leg_1_4', 'leg_1_4bar', 'leg_2_2', 'leg_2_3', 'leg_2_4', 'leg_2_4bar', 'leg_3_2', 'leg_3_3', 'leg_3_4', 'leg_3_4bar', 'leg_4_2', 'leg_4_3', 'leg_4_4', 'leg_4_4bar', 'leg_5_2', 'leg_5_3', 'leg_5_4', 'leg_5_4bar', 'leg_6_2', 'leg_6_3', 'leg_6_4', 'leg_6_4bar', ]

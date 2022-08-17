@@ -1,0 +1,3 @@
+<launch>
+  <node name="snapbot_launch" pkg="snapbot" type="snapbot_node" output="screen" required = "true"/>
+</launch>

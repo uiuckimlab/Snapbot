@@ -1,2 +1,0 @@
-Dynamixel_SDK/dynamixel_sdk:Snapbot
--DCATKIN_DEVEL_PREFIX=/home/kevingim/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kevingim/catkin_ws/install -G Unix Makefiles

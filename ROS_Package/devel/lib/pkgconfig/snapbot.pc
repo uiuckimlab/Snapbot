@@ -1,8 +1,0 @@
-prefix=/home/kevingim/catkin_ws/devel
-
-Name: snapbot
-Description: Description of snapbot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp std_msgs dynamixel_sdk

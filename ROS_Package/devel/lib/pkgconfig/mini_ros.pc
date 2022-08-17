@@ -1,8 +1,0 @@
-prefix=/home/mini/catkin_ws/devel
-
-Name: mini_ros
-Description: Description of mini_ros
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp rospy geometry_msgs std_msgs dynamixel_sdk

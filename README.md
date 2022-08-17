@@ -24,8 +24,11 @@ STL files are provided in "3D printing STL" folder. The parts can be printed usi
 
 ## MATLAB Simulation
 
+Simulation model for Snapbot V2 was created using MATLAB Simscape multi-body (MATLAB 2021a). There are three simulations models for 2 leg, 4 leg, and 6 leg configuration with the motion generator implemented in the [paper](#citation).
 
 ## ROS Package
+This ROS package used to operate Snapbot V2 Hardware. By executing launch file "snapbot.launch", the robot can be teleoperated using keyboard inputs.
+
 
 ## Related Work
 

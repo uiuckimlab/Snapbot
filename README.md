@@ -23,6 +23,7 @@ In this repository, we provide STL files and a BOM that is necessary to build th
 STL files are provided in "3D printing STL" folder. The parts can be printed using most of 3D printing methods (FDM, SLS, SLA, etc.). The folder also contains the BOM (Bill of Materials) which lists the off-the-shelf components needed to build the Snapbot2.0 hardware. 
 
 ## MATLAB Simulation
+<img src="https://user-images.githubusercontent.com/7993458/185044196-23c7702c-8e2a-4fc4-8d24-60f312364eda.gif" width = 400>
 
 Simulation model for Snapbot V2 was created using MATLAB Simscape multi-body (MATLAB 2021a). There are three simulations models for 2 leg, 4 leg, and 6 leg configuration with the motion generator implemented in the [paper](#citation).
 
@@ -66,3 +67,4 @@ This ROS package used to operate Snapbot V2 Hardware. By executing launch file "
 }
 ```
 Link: https://ieeexplore.ieee.org/abstract/document/9341279
+

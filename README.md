@@ -4,10 +4,11 @@
 </div>
 
 -----------------
-**Snapbot** is a reconfigurable legged robot to emulate configuration changes and various styles of legged locomotion, and **Snapbot V2.0** is upgraded hardware with better dynamic performance and robust leg module connection. Snapbot is composed of a body and leg modules
+**Snapbot** is a reconfigurable legged robot to emulate configuration changes and various styles of legged locomotion. **Snapbot V2.0** has upgraded hardware to improve dynamical performance and robustness of the system for repetitive, and dynamical operations. 
 
+Snapbot consists of a body and leg modules. The body modules includes a computer, batteries, electronic circuit boards, and a camera module. The camera module has 2-DOF, which can be used to recognize the robot's configuration or see surroundings. The leg module can be attached and detached to the body using magnetic connection, so it doesn't need any fastners but the docking structure ensures sturdy connection even during an impulsive motions. 
 
-In this repository, we provide STL files and a BOM to build the Snapbot V2.0 hardware, MATLAB Simscape simulation models of different leg configurations, ROS package to operate the hardware, and URDF of the robot. 
+In this repository, we provide STL files and a BOM that is necessary to build the Snapbot V2.0 hardware, MATLAB Simscape simulation models, ROS package for the hardware, and URDF of the robot. 
 
 
 
@@ -19,7 +20,11 @@ In this repository, we provide STL files and a BOM to build the Snapbot V2.0 har
 5. [Citation](#citation)
 
 ## 3D printing STL
+STL files are provided in "3D printing STL" folder. The parts can be printed using most of 3D printing methods (FDM, SLS, SLA, etc.). The folder also contains the BOM (Bill of Materials) which lists the off-the-shelf components needed to build the Snapbot2.0 hardware. 
+
 ## MATLAB Simulation
+
+
 ## ROS Package
 
 ## Related Work

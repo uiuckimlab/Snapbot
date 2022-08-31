@@ -1,3 +1,4 @@
 */build/
 */devel/
 */.catkin_workspace
+snapbot_catkin_ws/src/CMakeLists.txt

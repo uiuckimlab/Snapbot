@@ -7,7 +7,6 @@
 #include <math.h>
 #include <sys/select.h>
 #include <termios.h>
-#include <stropts.h>
 #include <unistd.h>
 #include <fcntl.h>
 // #include <sys/ioctl.h>
@@ -101,7 +100,7 @@ void addparam_read(int DXL_ID[], int DXL_num);
 void addparam_write(int ID, int VALUE, int LEN_DATA);
 int open_port();
 int close_port(int DXL_ID[12], int DXL_num);
-int DXL_setting(int DXL_ID[12], int DXL_num);
+void DXL_setting(int DXL_ID[12], int DXL_num);
 void dxl_scan(int DXL_ID[12]);
 void conf_check(int DXL_ID_LEG[12], int DXL_ID[12], int DXL_num);
 int conf_simple(int DXL_ID_input[], int DXL_num);

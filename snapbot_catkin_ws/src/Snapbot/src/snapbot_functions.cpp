@@ -223,6 +223,7 @@ int open_port()
         getch();
         return 0;
     }
+    return 0;
 }
 int close_port(int DXL_ID[12], int DXL_num)
 {
@@ -233,7 +234,7 @@ int close_port(int DXL_ID[12], int DXL_num)
     portHandler->closePort();
     return 0;
 }
-int DXL_setting(int DXL_ID[12], int DXL_num)
+void DXL_setting(int DXL_ID[12], int DXL_num)
 {
     printf("Number of Dxnamixels: %d\n", DXL_num);
     // printf("Press any key to continue! (or press ESC to quit!)\n");

@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Snapbot_V2.0.SLDASM">
+  <link
+    name="Body">
+    <inertial>
+      <origin
+        xyz="0.000698393115871002 0.000288945802796735 0.00803423705251359"
+        rpy="0 0 0" />
+      <mass
+        value="0.243375116892044" />
+      <inertia
+        ixx="0.000212893207585076"
+        ixy="5.24940171471562E-07"
+        ixz="-2.46229578713823E-07"
+        iyy="0.0001937211842341"
+        iyz="2.43146414991933E-07"
+        izz="0.000369983133865988" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Camera_module_1">
+    <inertial>
+      <origin
+        xyz="0.00587664178888978 0.00446482600512574 0.0166383704347961"
+        rpy="0 0 0" />
+      <mass
+        value="0.0185738207859444" />
+      <inertia
+        ixx="1.71013884725005E-06"
+        ixy="-2.90460159502904E-07"
+        ixz="-2.150980252729E-08"
+        iyy="2.07931187170696E-06"
+        iyz="-1.44223438375534E-08"
+        izz="2.57241224360764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Camera_module_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Camera_module_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.05"
+      rpy="0 0 2.61799387799149" />
+    <parent
+      link="Body" />
+    <child
+      link="Camera_module_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Camera_module_2">
+    <inertial>
+      <origin
+        xyz="-0.00894831234886913 -0.00582438183070246 0.00628292350373875"
+        rpy="0 0 0" />
+      <mass
+        value="0.0256188976389936" />
+      <inertia
+        ixx="7.88810944936654E-06"
+        ixy="-8.24209107303906E-07"
+        ixz="-1.14000247983406E-06"
+        iyy="8.54108320249045E-06"
+        iyz="-7.70938479777599E-07"
+        izz="9.94443800097106E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Camera_module_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Camera_module_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0183294742460734"
+      rpy="-0.00940777862508587 0.0162930683068517 -7.6643050616781E-05" />
+    <parent
+      link="Camera_module_1" />
+    <child
+      link="Camera_module_2" />
+    <axis
+      xyz="0.500000000000001 -0.866025403784438 0" />
+  </joint>
+  <link
+    name="Leg_module_1_1">
+    <inertial>
+      <origin
+        xyz="-7.13724657916415E-08 0.000373799301046028 0.0154182546673216"
+        rpy="0 0 0" />
+      <mass
+        value="0.0631785349056668" />
+      <inertia
+        ixx="1.7187711929136E-05"
+        ixy="-5.8324069547854E-11"
+        ixz="-2.19004554223317E-11"
+        iyy="1.51262656733829E-05"
+        iyz="-2.63262418810456E-08"
+        izz="1.20475796652155E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_1_1"
+    type="fixed">
+    <origin
+      xyz="-0.0389249999999995 -0.0674200776846189 0.0103294742460734"
+      rpy="1.5707963267949 0 -0.52359877559829" />
+    <parent
+      link="Body" />
+    <child
+      link="Leg_module_1_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_module_1_2">
+    <inertial>
+      <origin
+        xyz="-0.000290776360641745 0.000350553903850227 0.0424303561818183"
+        rpy="0 0 0" />
+      <mass
+        value="0.0824270440491864" />
+      <inertia
+        ixx="2.30529585035524E-05"
+        ixy="-3.10286928952101E-09"
+        ixz="1.49495155302856E-09"
+        iyy="2.12214709599738E-05"
+        iyz="-1.38476843679373E-07"
+        izz="2.44663294862975E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_1_2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.03725"
+      rpy="0 0 0" />
+    <parent
+      link="Leg_module_1_1" />
+    <child
+      link="Leg_module_1_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Leg_module_1_3">
+    <inertial>
+      <origin
+        xyz="2.45741484106166E-09 0.000972843111612401 0.036226536467209"
+        rpy="0 0 0" />
+      <mass
+        value="0.0151486232431239" />
+      <inertia
+        ixx="1.00807802365218E-05"
+        ixy="4.39144266497702E-12"
+        ixz="1.00434444747242E-12"
+        iyy="1.39066075750629E-05"
+        iyz="-4.89507332017665E-07"
+        izz="4.80921677651482E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_1_3"
+    type="continuous">
+    <origin
+      xyz="0 0.00029999999999997 0.05675"
+      rpy="-0.0100573048452913 0 0" />
+    <parent
+      link="Leg_module_1_2" />
+    <child
+      link="Leg_module_1_3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_1_4">
+    <inertial>
+      <origin
+        xyz="4.20295677225763E-05 -0.039054256810963 -0.001354432069402"
+        rpy="0 0 0" />
+      <mass
+        value="0.0147333532003768" />
+      <inertia
+        ixx="1.15244152883744E-05"
+        ixy="4.83944400435171E-12"
+        ixz="-7.64742245033355E-11"
+        iyy="8.83031900445984E-07"
+        iyz="-3.85547013488905E-07"
+        izz="1.19866034928746E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_1_4"
+    type="continuous">
+    <origin
+      xyz="0 -0.000603428117922688 0.0599969655441553"
+      rpy="-0.0105798453585739 0 0" />
+    <parent
+      link="Leg_module_1_3" />
+    <child
+      link="Leg_module_1_4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_1_4bar">
+    <inertial>
+      <origin
+        xyz="-0.000153041712575352 -0.0147990308191147 0.0229851342034179"
+        rpy="0 0 0" />
+      <mass
+        value="0.00683592925491238" />
+      <inertia
+        ixx="2.34158176837936E-06"
+        ixy="1.67093420859149E-09"
+        ixz="8.89034652601514E-09"
+        iyy="1.50934801971931E-06"
+        iyz="8.10566623140942E-07"
+        izz="9.10986963067391E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_4bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_1_4bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_1_4bar"
+    type="continuous">
+    <origin
+      xyz="0 0.00629999999999993 0.0804999999999999"
+      rpy="-0.0165784581965256 0 0" />
+    <parent
+      link="Leg_module_1_2" />
+    <child
+      link="Leg_module_1_4bar" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_2_1">
+    <inertial>
+      <origin
+        xyz="-6.95475167525328E-08 0.000373796236912872 0.0154182547266335"
+        rpy="0 0 0" />
+      <mass
+        value="0.063178534807664" />
+      <inertia
+        ixx="1.71877117419958E-05"
+        ixy="-5.83559857829628E-11"
+        ixz="-2.10530223172314E-11"
+        iyy="1.51262656422407E-05"
+        iyz="-2.63251732228572E-08"
+        izz="1.20475795390294E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_2_1"
+    type="fixed">
+    <origin
+      xyz="0.038925000000001 -0.0674200776846179 0.0103294742460733"
+      rpy="1.5707963267949 0 0.52359877559831" />
+    <parent
+      link="Body" />
+    <child
+      link="Leg_module_2_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_module_2_2">
+    <inertial>
+      <origin
+        xyz="-0.000290786260265082 0.000350550447493955 0.0424303491067431"
+        rpy="0 0 0" />
+      <mass
+        value="0.0824270292833377" />
+      <inertia
+        ixx="2.30529583875021E-05"
+        ixy="-3.10383306149393E-09"
+        ixz="1.4952913083224E-09"
+        iyy="2.12214701574865E-05"
+        iyz="-1.38478939763604E-07"
+        izz="2.44663283940207E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_2_2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.03725"
+      rpy="0 0 0" />
+    <parent
+      link="Leg_module_2_1" />
+    <child
+      link="Leg_module_2_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Leg_module_2_3">
+    <inertial>
+      <origin
+        xyz="6.1176992638412E-10 0.000972841972890237 0.036226536455757"
+        rpy="0 0 0" />
+      <mass
+        value="0.0151486232431239" />
+      <inertia
+        ixx="1.00807802750981E-05"
+        ixy="4.36350898471634E-12"
+        ixz="4.34896926456246E-13"
+        iyy="1.39066075568357E-05"
+        iyz="-4.89507865435104E-07"
+        izz="4.80921677540979E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_2_3"
+    type="continuous">
+    <origin
+      xyz="0 0.000299999999999996 0.0567499999999999"
+      rpy="-0.0100573048453112 0 0" />
+    <parent
+      link="Leg_module_2_2" />
+    <child
+      link="Leg_module_2_3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_2_4">
+    <inertial>
+      <origin
+        xyz="4.19939626802035E-05 -0.0390541987134789 -0.00135443548203856"
+        rpy="0 0 0" />
+      <mass
+        value="0.0147333946079413" />
+      <inertia
+        ixx="1.15244338360127E-05"
+        ixy="1.49965011108285E-11"
+        ixz="-7.8868372480417E-11"
+        iyy="8.83037398374249E-07"
+        iyz="-3.85544909508521E-07"
+        izz="1.19866276521152E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_2_4"
+    type="continuous">
+    <origin
+      xyz="0 -0.000603428117910471 0.0599969655441548"
+      rpy="-0.0105798453581945 0 0" />
+    <parent
+      link="Leg_module_2_3" />
+    <child
+      link="Leg_module_2_4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_2_4bar">
+    <inertial>
+      <origin
+        xyz="-0.000153041712573354 -0.0147990308191101 0.0229851342034185"
+        rpy="0 0 0" />
+      <mass
+        value="0.00683592925491239" />
+      <inertia
+        ixx="2.34158176837936E-06"
+        ixy="1.67093420856989E-09"
+        ixz="8.89034652603468E-09"
+        iyy="1.50934801971929E-06"
+        iyz="8.10566623140952E-07"
+        izz="9.10986963067417E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_4bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_2_4bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_2_4bar"
+    type="continuous">
+    <origin
+      xyz="0 0.00629999999999995 0.0805"
+      rpy="-0.0165784581965541 0 0" />
+    <parent
+      link="Leg_module_2_2" />
+    <child
+      link="Leg_module_2_4bar" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_3_1">
+    <inertial>
+      <origin
+        xyz="-7.06608178471472E-08 0.000373797728506917 0.0154182586742905"
+        rpy="0 0 0" />
+      <mass
+        value="0.0631785313638385" />
+      <inertia
+        ixx="1.7187712385433E-05"
+        ixy="-5.8231155089737E-11"
+        ixz="-2.15519281511903E-11"
+        iyy="1.51262640659994E-05"
+        iyz="-2.63257064904425E-08"
+        izz="1.20475783729998E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_3_1"
+    type="fixed">
+    <origin
+      xyz="0.0778499999999993 0 0.0103294742460734"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="Body" />
+    <child
+      link="Leg_module_3_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_module_3_2">
+    <inertial>
+      <origin
+        xyz="-0.000290780437123685 0.00035055182257299 0.0424303356191464"
+        rpy="0 0 0" />
+      <mass
+        value="0.0824272438246166" />
+      <inertia
+        ixx="2.3052992765417E-05"
+        ixy="-3.09856152497949E-09"
+        ixz="1.49505361213045E-09"
+        iyy="2.12215051825377E-05"
+        iyz="-1.38478180816314E-07"
+        izz="2.4466395200917E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_3_2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.03725"
+      rpy="0 0 0" />
+    <parent
+      link="Leg_module_3_1" />
+    <child
+      link="Leg_module_3_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Leg_module_3_3">
+    <inertial>
+      <origin
+        xyz="1.53462381786497E-09 0.00170127905765847 0.036199638803981"
+        rpy="0 0 0" />
+      <mass
+        value="0.0151486257339542" />
+      <inertia
+        ixx="1.00807806479728E-05"
+        ixy="4.44484345999763E-12"
+        ixz="6.18654724450542E-13"
+        iyy="1.38832412070697E-05"
+        iyz="-6.72052692945289E-07"
+        izz="4.83258510265994E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_3_3"
+    type="continuous">
+    <origin
+      xyz="0 0.000300000000000003 0.0567499999999997"
+      rpy="0.0100573048452967 0 0" />
+    <parent
+      link="Leg_module_3_2" />
+    <child
+      link="Leg_module_3_3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_3_4">
+    <inertial>
+      <origin
+        xyz="4.20490632792267E-05 -0.039076824241083 0.000258194696471981"
+        rpy="0 0 0" />
+      <mass
+        value="0.0147334003564446" />
+      <inertia
+        ixx="1.15244339861746E-05"
+        ixy="-2.4827673740295E-13"
+        ixz="-7.91098093199217E-11"
+        iyy="8.70152630317687E-07"
+        iyz="7.35395711252576E-08"
+        izz="1.19995131254709E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_3_4"
+    type="continuous">
+    <origin
+      xyz="0 0.000603428117812372 0.0599969655441564"
+      rpy="0.0105798453584752 0 0" />
+    <parent
+      link="Leg_module_3_3" />
+    <child
+      link="Leg_module_3_4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_3_4bar">
+    <inertial>
+      <origin
+        xyz="-0.000153041712520068 -0.0140289201388825 0.0234631009730389"
+        rpy="0 0 0" />
+      <mass
+        value="0.00683592925491239" />
+      <inertia
+        ixx="2.34158176837936E-06"
+        ixy="1.96473826365663E-09"
+        ixz="8.83006715898014E-09"
+        iyy="1.56240282628846E-06"
+        iyz="7.88959763188745E-07"
+        izz="8.57932156498237E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_4bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_3_4bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_3_4bar"
+    type="continuous">
+    <origin
+      xyz="0 0.00629999999999995 0.0804999999999999"
+      rpy="0.0165784581965428 0 0" />
+    <parent
+      link="Leg_module_3_2" />
+    <child
+      link="Leg_module_3_4bar" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_4_1">
+    <inertial>
+      <origin
+        xyz="-7.14195381237848E-08 0.000373799284010597 0.0154182546427434"
+        rpy="0 0 0" />
+      <mass
+        value="0.0631785349539091" />
+      <inertia
+        ixx="1.71877118801813E-05"
+        ixy="-5.82962107182238E-11"
+        ixz="-2.19264106404294E-11"
+        iyy="1.51262657263492E-05"
+        iyz="-2.63262530129922E-08"
+        izz="1.20475796631155E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_4_1"
+    type="fixed">
+    <origin
+      xyz="0.0389249999999999 0.0674200776846188 0.0103294742460734"
+      rpy="1.5707963267949 0 2.6179938779915" />
+    <parent
+      link="Body" />
+    <child
+      link="Leg_module_4_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_module_4_2">
+    <inertial>
+      <origin
+        xyz="-0.000290776360642918 0.000350553903847837 0.0424303561817777"
+        rpy="0 0 0" />
+      <mass
+        value="0.082427044049011" />
+      <inertia
+        ixx="2.30529585034879E-05"
+        ixy="-3.10286926634693E-09"
+        ixz="1.49495155290828E-09"
+        iyy="2.12214709599619E-05"
+        iyz="-1.38476843680271E-07"
+        izz="2.44663294862253E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_4_2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.03725"
+      rpy="0 0 0" />
+    <parent
+      link="Leg_module_4_1" />
+    <child
+      link="Leg_module_4_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Leg_module_4_3">
+    <inertial>
+      <origin
+        xyz="2.45741481330608E-09 0.000972843111612264 0.0362265364672091"
+        rpy="0 0 0" />
+      <mass
+        value="0.0151486232431238" />
+      <inertia
+        ixx="1.00807802365218E-05"
+        ixy="4.39144265061717E-12"
+        ixz="1.00434444620187E-12"
+        iyy="1.39066075750629E-05"
+        iyz="-4.89507332017625E-07"
+        izz="4.8092167765148E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_4_3"
+    type="continuous">
+    <origin
+      xyz="0 0.000300000000000803 0.05675"
+      rpy="-0.0100573048452958 0 0" />
+    <parent
+      link="Leg_module_4_2" />
+    <child
+      link="Leg_module_4_3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_4_4">
+    <inertial>
+      <origin
+        xyz="4.20189435796081E-05 -0.0390541968984776 -0.00135444873309865"
+        rpy="0 0 0" />
+      <mass
+        value="0.0147334042546387" />
+      <inertia
+        ixx="1.15244338214515E-05"
+        ixy="1.21539074815589E-11"
+        ixz="-7.84833481349759E-11"
+        iyy="8.83037831643497E-07"
+        iyz="-3.85543788848207E-07"
+        izz="1.19866281874056E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_4_4"
+    type="continuous">
+    <origin
+      xyz="0 -0.00060342811792294 0.0599969655441553"
+      rpy="-0.0105798453585994 0 0" />
+    <parent
+      link="Leg_module_4_3" />
+    <child
+      link="Leg_module_4_4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_4_4bar">
+    <inertial>
+      <origin
+        xyz="4.69582874246255E-05 -0.0147990308191147 0.0229851342034179"
+        rpy="0 0 0" />
+      <mass
+        value="0.00683592925491239" />
+      <inertia
+        ixx="2.34158176837936E-06"
+        ixy="1.67093420859128E-09"
+        ixz="8.89034652601551E-09"
+        iyy="1.50934801971931E-06"
+        iyz="8.10566623140943E-07"
+        izz="9.10986963067391E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_4bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_4_4bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_4_4bar"
+    type="continuous">
+    <origin
+      xyz="0 0.00629999999999998 0.0804999999999999"
+      rpy="-0.0165784581965504 0 0" />
+    <parent
+      link="Leg_module_4_2" />
+    <child
+      link="Leg_module_4_4bar" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_5_1">
+    <inertial>
+      <origin
+        xyz="-7.13831554283173E-08 0.00037379926348256 0.0154182547378585"
+        rpy="0 0 0" />
+      <mass
+        value="0.0631785347734705" />
+      <inertia
+        ixx="1.71877118759835E-05"
+        ixy="-5.83199662801633E-11"
+        ixz="-2.19039917594755E-11"
+        iyy="1.51262656830483E-05"
+        iyz="-2.63262708778827E-08"
+        izz="1.204757964373E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_5_1"
+    type="fixed">
+    <origin
+      xyz="-0.0389250000000003 0.0674200776846184 0.0103294742460733"
+      rpy="-1.5707963267949 0 0.523598775598304" />
+    <parent
+      link="Body" />
+    <child
+      link="Leg_module_5_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_module_5_2">
+    <inertial>
+      <origin
+        xyz="-0.000290786260284739 0.000350550447562065 0.0424303491067748"
+        rpy="0 0 0" />
+      <mass
+        value="0.0824270292834939" />
+      <inertia
+        ixx="2.30529583875548E-05"
+        ixy="-3.10383300606671E-09"
+        ixz="1.49529130076094E-09"
+        iyy="2.12214701575006E-05"
+        iyz="-1.38478939738648E-07"
+        izz="2.44663283940795E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_5_2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.03725"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="Leg_module_5_1" />
+    <child
+      link="Leg_module_5_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Leg_module_5_3">
+    <inertial>
+      <origin
+        xyz="6.11807882133775E-10 0.000972841972881687 0.0362265364557561"
+        rpy="0 0 0" />
+      <mass
+        value="0.0151486232431238" />
+      <inertia
+        ixx="1.00807802750981E-05"
+        ixy="4.36350887669979E-12"
+        ixz="4.34896919044707E-13"
+        iyy="1.39066075568356E-05"
+        iyz="-4.89507865435267E-07"
+        izz="4.8092167754098E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_5_3"
+    type="continuous">
+    <origin
+      xyz="0 0.000300000000000029 0.05675"
+      rpy="-0.0100573048452937 0 0" />
+    <parent
+      link="Leg_module_5_2" />
+    <child
+      link="Leg_module_5_3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_5_4">
+    <inertial>
+      <origin
+        xyz="4.2006990863791E-05 -0.0390542107305775 -0.0013544389533631"
+        rpy="0 0 0" />
+      <mass
+        value="0.0147333714620578" />
+      <inertia
+        ixx="1.15244296621137E-05"
+        ixy="1.33713862876458E-11"
+        ixz="-7.93133413754874E-11"
+        iyy="8.83035632388419E-07"
+        iyz="-3.85544318353051E-07"
+        izz="1.19866218828097E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_5_4"
+    type="continuous">
+    <origin
+      xyz="0 -0.000603428117922931 0.0599969655441552"
+      rpy="-0.0105798453598466 0 0" />
+    <parent
+      link="Leg_module_5_3" />
+    <child
+      link="Leg_module_5_4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_5_4bar">
+    <inertial>
+      <origin
+        xyz="-0.000153041712575352 -0.0147990308191147 0.0229851342034179"
+        rpy="0 0 0" />
+      <mass
+        value="0.0068359292549124" />
+      <inertia
+        ixx="2.34158176837936E-06"
+        ixy="1.67093420859298E-09"
+        ixz="8.89034652601345E-09"
+        iyy="1.50934801971932E-06"
+        iyz="8.10566623140944E-07"
+        izz="9.10986963067394E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_4bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_5_4bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_5_4bar"
+    type="continuous">
+    <origin
+      xyz="0 0.00629999999999998 0.0804999999999999"
+      rpy="-0.0165784581978622 0 0" />
+    <parent
+      link="Leg_module_5_2" />
+    <child
+      link="Leg_module_5_4bar" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_6_1">
+    <inertial>
+      <origin
+        xyz="-7.06897977735628E-08 -0.000373797370537152 -0.0154182586424687"
+        rpy="0 0 0" />
+      <mass
+        value="0.0631785314514076" />
+      <inertia
+        ixx="1.7187712394458E-05"
+        ixy="5.81974168718057E-11"
+        ixz="2.15669260543293E-11"
+        iyy="1.51262641031604E-05"
+        iyz="-2.63256123161969E-08"
+        izz="1.20475784011088E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_6_1"
+    type="fixed">
+    <origin
+      xyz="-0.0778499999999996 0 0.0103294742460733"
+      rpy="-1.57079635260447 0 -1.5707963267949" />
+    <parent
+      link="Body" />
+    <child
+      link="Leg_module_6_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_module_6_2">
+    <inertial>
+      <origin
+        xyz="-0.000290780437134333 -0.000350551822552675 -0.042430335619155"
+        rpy="0 0 0" />
+      <mass
+        value="0.0824272438246501" />
+      <inertia
+        ixx="2.30529927654273E-05"
+        ixy="3.09856153331187E-09"
+        ixz="-1.49505361016719E-09"
+        iyy="2.12215051825407E-05"
+        iyz="-1.38478180823054E-07"
+        izz="2.44663952009307E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_6_2"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.03725"
+      rpy="0 0 0" />
+    <parent
+      link="Leg_module_6_1" />
+    <child
+      link="Leg_module_6_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Leg_module_6_3">
+    <inertial>
+      <origin
+        xyz="1.53461921793955E-09 -0.000972842396856038 -0.0362265341654649"
+        rpy="0 0 0" />
+      <mass
+        value="0.0151486257339541" />
+      <inertia
+        ixx="1.00807806479728E-05"
+        ixy="-4.43150114611315E-12"
+        ixz="-7.07929839569635E-13"
+        iyy="1.39066086911659E-05"
+        iyz="-4.8950763038199E-07"
+        izz="4.80921761856375E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_6_3"
+    type="continuous">
+    <origin
+      xyz="0 -0.000300000000000019 -0.0567500000000001"
+      rpy="-0.0100573048452744 0 0" />
+    <parent
+      link="Leg_module_6_2" />
+    <child
+      link="Leg_module_6_3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_6_4">
+    <inertial>
+      <origin
+        xyz="4.20620949157939E-05 0.0390542097616362 0.00135443910882843"
+        rpy="0 0 0" />
+      <mass
+        value="0.0147333772016279" />
+      <inertia
+        ixx="1.15244298224563E-05"
+        ixy="-1.39010916865733E-12"
+        ixz="7.94739105086431E-11"
+        iyy="8.83036037124614E-07"
+        iyz="-3.85545325123704E-07"
+        izz="1.19866221928612E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_6_4"
+    type="continuous">
+    <origin
+      xyz="0 0.000603428117921652 -0.0599969655441553"
+      rpy="-0.0105798453581948 0 0" />
+    <parent
+      link="Leg_module_6_3" />
+    <child
+      link="Leg_module_6_4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Leg_module_6_4bar">
+    <inertial>
+      <origin
+        xyz="-0.000153041712575376 0.014799030819114 -0.0229851342034177"
+        rpy="0 0 0" />
+      <mass
+        value="0.0068359292549124" />
+      <inertia
+        ixx="2.34158176837936E-06"
+        ixy="-1.67093420859224E-09"
+        ixz="-8.89034652601449E-09"
+        iyy="1.50934801971931E-06"
+        iyz="8.10566623140944E-07"
+        izz="9.10986963067395E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_4bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Snapbot_V2.0.SLDASM/meshes/Leg_module_6_4bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_6_4bar"
+    type="continuous">
+    <origin
+      xyz="0 -0.00629999999999998 -0.0805"
+      rpy="-0.0165784581965372 0 0" />
+    <parent
+      link="Leg_module_6_2" />
+    <child
+      link="Leg_module_6_4bar" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
